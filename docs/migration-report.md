@@ -56,16 +56,16 @@ Social links preserved:
 Local assets were saved under `assets/images/`:
 
 - `logo.jpg`
-- `clothes-hanger.jpg`
-- `donation-bin.jpg`
 - `team-photo.png`
 - `social/tiktok.png`
 - `social/instagram.png`
 - `events/partner-yogurtland.png`
 - `events/partner-panda.png`
 - `events/partner-chipotle.png`
-- `events/flyer-eriks.jpg`
 - `events/flyer-fundraiser.png`
+- `events/flyer-panda-valentines.png`
+- `events/flyer-panda-march.png`
+- `events/flyer-panda-april.png`
 - `events/event-1.jpg`
 - `events/event-2.png`
 - `events/event-3.jpg`

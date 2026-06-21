@@ -214,6 +214,15 @@ p {
   align-items: center;
 }
 
+.text-block {
+  max-width: 820px;
+}
+
+.compact-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .panel {
   background: var(--white);
   border: 1px solid var(--line);
@@ -238,6 +247,9 @@ p {
 }
 
 .counter-note {
+  display: block;
+  max-width: none;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -282,6 +294,71 @@ p {
   background: var(--white);
   border: 1px solid var(--line);
   object-fit: contain;
+}
+
+.partner-grid .card {
+  display: grid;
+  gap: 14px;
+  align-content: center;
+  text-align: center;
+}
+
+.partner-grid img {
+  height: 170px;
+  object-fit: contain;
+  padding: 18px;
+}
+
+.fundraiser-list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.fundraiser-list .card {
+  padding: 18px;
+}
+
+.fundraiser-list h3 {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+.flyer-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+.flyer-grid figure {
+  margin: 0;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.flyer-grid img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.flyer-grid .logo-feature {
+  display: grid;
+}
+
+.flyer-grid .logo-feature img {
+  object-fit: contain;
+  padding: 28px;
+}
+
+.flyer-grid figcaption {
+  padding: 12px 14px;
+  font-weight: 700;
+  color: var(--rose-dark);
 }
 
 .event-grid {
@@ -418,6 +495,8 @@ p {
   .card-grid,
   .partner-grid,
   .event-grid,
+  .fundraiser-list,
+  .flyer-grid,
   .post-card,
   .post-gallery {
     grid-template-columns: 1fr;
