@@ -66,7 +66,12 @@ Local assets were saved under `assets/images/`:
 - `events/partner-chipotle.png`
 - `events/flyer-eriks.jpg`
 - `events/flyer-fundraiser.png`
-- `events/partnership-hero.jpg`
+- `events/event-1.jpg`
+- `events/event-2.png`
+- `events/event-3.jpg`
+- `events/event-4.jpg`
+- `events/event-5.png`
+- `events/event-6.png`
 - `blog/chapter-events-hero.png`
 - `blog/chapter-events-1.jpg`
 - `blog/chapter-events-2.png`
@@ -93,7 +98,7 @@ No public downloadable PDF, DOCX, XLSX, ZIP, or CSV files were detected.
 
 ## Missing Or Manual Content
 
-- The Events page appeared to rely on Wix app/widget behavior. The crawled HTML only exposed "EVENTS", "blog", and "gallery"; event listings should be manually added if they exist in Wix's backend.
+- The Events page now uses public images exposed by `/nonprofit/blank`. Any event titles, dates, or descriptions not visible in the public HTML would need to be added manually.
 - Blog feed RSS, search, member profile/account pages, checkout, and generic event detail pages cannot be recreated without their Wix app data.
 - The Corporate Partners form needs a form backend if you want real in-browser submissions. Recommended static-friendly options: Google Forms, Formspree, Basin, Getform, or a GitHub Pages-compatible third-party form endpoint.
 - Subpage SEO descriptions were mostly absent in the source and were drafted from visible page content.
