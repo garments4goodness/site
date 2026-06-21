@@ -223,6 +223,11 @@ p {
   padding-bottom: 40px;
 }
 
+.partners-section {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+
 .panel {
   background: var(--white);
   border: 1px solid var(--line);
@@ -309,56 +314,8 @@ p {
   padding: 18px;
 }
 
-.fundraiser-list {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 16px;
-  margin-bottom: 24px;
-}
-
-.fundraiser-list .card {
-  padding: 18px;
-}
-
-.fundraiser-list h3 {
-  font-size: 1.05rem;
-  margin-bottom: 10px;
-}
-
-.flyer-grid {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 18px;
-  align-items: start;
-}
-
-.flyer-grid figure {
-  margin: 0;
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.flyer-grid img {
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-}
-
-.flyer-grid .logo-feature {
-  display: grid;
-}
-
-.flyer-grid .logo-feature img {
-  object-fit: contain;
-  padding: 28px;
-}
-
-.flyer-grid figcaption {
-  padding: 12px 14px;
-  font-weight: 700;
-  color: var(--rose-dark);
+.partner-contact {
+  max-width: 720px;
 }
 
 .event-grid {
@@ -495,8 +452,6 @@ p {
   .card-grid,
   .partner-grid,
   .event-grid,
-  .fundraiser-list,
-  .flyer-grid,
   .post-card,
   .post-gallery {
     grid-template-columns: 1fr;
