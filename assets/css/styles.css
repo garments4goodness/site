@@ -218,6 +218,76 @@ p {
   max-width: 820px;
 }
 
+.mission-section {
+  display: grid;
+  gap: 36px;
+}
+
+.mission-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 48px;
+  align-items: end;
+}
+
+.mission-intro h2,
+.initiatives-heading h2,
+.section-heading h2 {
+  margin-bottom: 0;
+}
+
+.mission-intro .lead {
+  margin-bottom: 0;
+}
+
+.values-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.values-list span {
+  padding: 8px 14px;
+  border: 1px solid var(--rose);
+  border-radius: 999px;
+  background: var(--rose-soft);
+  color: var(--rose-dark);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.initiatives-heading,
+.section-heading {
+  max-width: 720px;
+}
+
+.initiative-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.initiative {
+  min-width: 0;
+  padding: 28px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.initiative h3 {
+  color: var(--rose-dark);
+}
+
+.initiative p {
+  margin-bottom: 0;
+}
+
+.section-heading {
+  margin-bottom: 28px;
+}
+
 .compact-section {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -448,6 +518,8 @@ p {
   }
 
   .split,
+  .mission-intro,
+  .initiative-grid,
   .team-grid,
   .card-grid,
   .partner-grid,
