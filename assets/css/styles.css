@@ -352,8 +352,14 @@ p {
   color: var(--rose-dark);
 }
 
-.chapter-card a {
+.chapter-links {
   margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.chapter-card a {
   font-weight: 700;
 }
 
