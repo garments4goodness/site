@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site Dev Tools | Garments4Goodness</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="assets/images/logo.jpg">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html"><img src="assets/images/logo.jpg" alt="Garments4Goodness logo"><span>Garments4Goodness</span></a>
+      <nav class="site-nav" aria-label="Developer navigation">
+        <a href="chapters.html">Preview Chapters</a>
+        <a href="assets/data/chapters.json">Raw Chapter Data</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero simple">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Maintenance Console</p>
+          <h1>Update chapter data without touching HTML.</h1>
+          <p class="lead">Edit chapter names, locations, descriptions, Instagram links, contact forms, and update links. Then download or copy the generated JSON and replace <code>assets/data/chapters.json</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section maintenance-layout">
+      <aside class="panel maintenance-help">
+        <p class="eyebrow">How To Use</p>
+        <ol>
+          <li>Edit the fields below.</li>
+          <li>Leave a link blank if that chapter should not show the button.</li>
+          <li>Click <strong>Download JSON</strong> or copy the output.</li>
+          <li>Replace <code>assets/data/chapters.json</code> in GitHub.</li>
+          <li>Preview <code>chapters.html</code> before publishing.</li>
+        </ol>
+        <p>This page is public if someone knows the URL. Do not put private notes, passwords, or sensitive data here.</p>
+      </aside>
+
+      <div class="maintenance-main">
+        <div class="maintenance-toolbar panel">
+          <button class="button" type="button" id="add-chapter">Add Chapter</button>
+          <button class="button secondary" type="button" id="download-json">Download JSON</button>
+          <button class="button secondary" type="button" id="copy-json">Copy JSON</button>
+        </div>
+
+        <div id="editor-status" class="notice" role="status">Loading chapter data...</div>
+        <div id="chapter-editor" class="editor-list" aria-live="polite"></div>
+
+        <section class="panel">
+          <p class="eyebrow">Generated JSON</p>
+          <textarea id="json-output" class="json-output" spellcheck="false" aria-label="Generated chapter JSON"></textarea>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner"><p>Developer helper for Garments4Goodness site maintenance.</p><p><a href="chapters.html">Back to Chapters</a></p></div></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

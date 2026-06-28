@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Milpitas Chapter",
+    "location": "California",
+    "description": "Hosted the first Garments4Goodness neighborhood clothing donation drive across Dixon Landing, Beresford, and Folsom.",
+    "instagramUrl": "https://www.instagram.com/g4g.milpitas/",
+    "contactUrl": "https://forms.gle/zGqEUHu2nZv4WVSs9",
+    "updateUrl": "post/_erwe.html"
+  },
+  {
+    "name": "Clovis Chapter",
+    "location": "California",
+    "description": "Organized a silent clothing drive using word of mouth to collect donations for local community impact.",
+    "instagramUrl": "https://www.instagram.com/g4g.clovis/",
+    "contactUrl": "https://docs.google.com/forms/d/e/1FAIpQLScrz_sNimCvOqbsHjMhbL-zRcIip03-I_Bgh1YBRE0LDc8kkg/viewform?usp=header",
+    "updateUrl": "post/lathrop-clovis-houston-wabasha-and-mountain-house-chapter-events.html"
+  },
+  {
+    "name": "Lathrop Chapter",
+    "location": "California",
+    "description": "Held a community drive at a local boba shop and collected more than forty bags of clothing.",
+    "instagramUrl": "https://www.instagram.com/g4g_lathrop/",
+    "contactUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdTofLwjHdeq-5bFL84jDIWCFvieMRkihIMPzbuIuwQd-ATfg/viewform?usp=header",
+    "updateUrl": "post/lathrop-clovis-houston-wabasha-and-mountain-house-chapter-events.html"
+  },
+  {
+    "name": "Houston Chapter",
+    "location": "Texas",
+    "description": "Hosted a clothing drive at Sharetea Houston to make donation drop-off accessible for local supporters.",
+    "instagramUrl": "https://www.instagram.com/g4g.houston/",
+    "contactUrl": "https://docs.google.com/forms/d/e/1FAIpQLSexB_enYrY69OZmBgYQD9wdmjTq6VQnA3UhzORPBC7BCDYy2A/viewform?usp=header",
+    "updateUrl": "post/lathrop-clovis-houston-wabasha-and-mountain-house-chapter-events.html"
+  },
+  {
+    "name": "Louisville Chapter",
+    "location": "Kentucky",
+    "description": "A public Garments4Goodness chapter building local donation and sustainability initiatives.",
+    "instagramUrl": "https://www.instagram.com/g4g.louisville/",
+    "contactUrl": "https://forms.gle/WnayGjZYa5nqTXYk9",
+    "updateUrl": ""
+  },
+  {
+    "name": "Oceanside Chapter",
+    "location": "California",
+    "description": "A public Garments4Goodness chapter building local donation and sustainability initiatives.",
+    "instagramUrl": "https://www.instagram.com/garments4goods_oceanside/",
+    "contactUrl": "https://forms.gle/1MsRHB8LE1vrJ78S8",
+    "updateUrl": ""
+  },
+  {
+    "name": "Wabasha Chapter",
+    "location": "Minnesota",
+    "description": "Featured in chapter updates for donation drive work and local outreach. This chapter's Instagram is no longer active.",
+    "instagramUrl": "",
+    "contactUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeLP0awdNol6WyxQN9Dbhd5bztROCbNMOFEM4SVE1gdwpjb-Q/viewform?usp=header",
+    "updateUrl": "post/lathrop-clovis-houston-wabasha-and-mountain-house-chapter-events.html"
+  },
+  {
+    "name": "Mountain House Chapter",
+    "location": "California",
+    "description": "Hosted a first outreach event at Marathi Shala Mahaprasad to introduce Garments4Goodness locally.",
+    "instagramUrl": "https://www.instagram.com/g4g.mountainhouse/",
+    "contactUrl": "https://forms.gle/91ZynTmf63okEYG27",
+    "updateUrl": "post/lathrop-clovis-houston-wabasha-and-mountain-house-chapter-events.html"
+  },
+  {
+    "name": "Kern County Chapter",
+    "location": "California",
+    "description": "Collected clothing donations through a drive at Independence High School.",
+    "instagramUrl": "https://www.instagram.com/g4g.kerncounty/",
+    "contactUrl": "https://docs.google.com/forms/d/e/1FAIpQLSevG5MxhgzGAec4UUXxNMadbS0-iMjE0XoeOXISz8yEbHivig/viewform?usp=header",
+    "updateUrl": "post/kern-county-stafford-and-san-jose-chapter-donation-drives.html"
+  },
+  {
+    "name": "Bakersfield Chapter",
+    "location": "California",
+    "description": "A public Garments4Goodness chapter building local donation and sustainability initiatives.",
+    "instagramUrl": "https://www.instagram.com/g4g.bakersfield/",
+    "contactUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdLq6ICuJ9ejqVurvCfIkLCYvYCKU_ha-y7T-ulmenSL2703A/viewform?usp=header",
+    "updateUrl": ""
+  },
+  {
+    "name": "Stafford Chapter",
+    "location": "Virginia",
+    "description": "Ran a donation drive at Brooke Point High School as part of Garments4Goodness chapter growth.",
+    "instagramUrl": "https://www.instagram.com/g4g.stafford/",
+    "contactUrl": "https://docs.google.com/forms/d/1vDfKubxH8nZ-i0JytQSELn83boA3L14q9MPhjbMe2ZY/viewform",
+    "updateUrl": "post/kern-county-stafford-and-san-jose-chapter-donation-drives.html"
+  },
+  {
+    "name": "San Jose Chapter",
+    "location": "California",
+    "description": "Collected clothing donations at Leigh High School through a local chapter drive.",
+    "instagramUrl": "https://www.instagram.com/g4g.sanjose/",
+    "contactUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdCwgH7hfA8uN5xdVmySYK55u8XKPVcBjYgfCDozqvbSmNR3Q/viewform?usp=header",
+    "updateUrl": "post/kern-county-stafford-and-san-jose-chapter-donation-drives.html"
+  }
+]
