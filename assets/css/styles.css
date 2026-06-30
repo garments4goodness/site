@@ -534,109 +534,6 @@ p {
   border-radius: 0 8px 8px 0;
 }
 
-.maintenance-layout {
-  display: grid;
-  grid-template-columns: minmax(220px, 0.35fr) minmax(0, 1fr);
-  gap: 24px;
-  align-items: start;
-}
-
-.maintenance-help {
-  position: sticky;
-  top: 100px;
-}
-
-.maintenance-help ol {
-  padding-left: 20px;
-}
-
-.maintenance-main,
-.editor-list {
-  display: grid;
-  gap: 20px;
-}
-
-.maintenance-toolbar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  box-shadow: none;
-}
-
-.editor-card {
-  box-shadow: none;
-}
-
-.editor-card-heading {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  align-items: start;
-  margin-bottom: 18px;
-}
-
-.editor-card-heading h2 {
-  margin-bottom: 0;
-  font-size: 1.45rem;
-}
-
-.editor-card label {
-  display: grid;
-  gap: 6px;
-  margin-bottom: 14px;
-  font-weight: 700;
-  color: var(--rose-dark);
-}
-
-.editor-card input,
-.editor-card textarea,
-.json-output {
-  width: 100%;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 11px 12px;
-  font: inherit;
-  color: var(--text);
-  background: var(--white);
-}
-
-.editor-card textarea {
-  min-height: 96px;
-  resize: vertical;
-}
-
-.json-output {
-  min-height: 300px;
-  font-family: Menlo, Consolas, monospace;
-  font-size: 0.9rem;
-  resize: vertical;
-}
-
-.static-form {
-  display: grid;
-  gap: 12px;
-}
-
-.static-form label {
-  font-weight: 700;
-  color: var(--rose-dark);
-}
-
-.static-form input,
-.static-form textarea {
-  width: 100%;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 11px 12px;
-  font: inherit;
-  background: var(--white);
-}
-
-.static-form textarea {
-  min-height: 130px;
-  resize: vertical;
-}
-
 .site-footer {
   background: var(--rose-dark);
   color: var(--white);
@@ -682,7 +579,6 @@ p {
   .mission-intro,
   .initiative-grid,
   .chapter-feature,
-  .maintenance-layout,
   .team-grid,
   .card-grid,
   .partner-grid,
@@ -696,10 +592,6 @@ p {
 
   .chapter-actions {
     justify-content: flex-start;
-  }
-
-  .maintenance-help {
-    position: static;
   }
 
   .hero-inner,

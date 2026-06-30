@@ -1,6 +1,15 @@
 # Maintaining The Site
 
-This site is static and runs on GitHub Pages. There is no private backend or login.
+This site is static and runs on GitHub Pages. There is no CMS, private backend, admin dashboard, or login.
+
+The intended maintenance workflow is agent-assisted file editing:
+
+1. A human gives the needed content, links, or design request.
+2. An AI coding agent reads `AGENTS.md` and `FUTURE_CHANGES.md`.
+3. The agent edits the relevant files.
+4. The agent previews locally when practical.
+5. The human reviews.
+6. The agent commits and pushes after approval.
 
 ## Update Chapter Links
 
@@ -8,15 +17,7 @@ Most chapter content lives in:
 
 `assets/data/chapters.json`
 
-To make changes without hand-editing HTML:
-
-1. Open `dev-tools.html` in the local preview or deployed site.
-2. Edit the chapter fields.
-3. Download `chapters.json` or copy the generated JSON.
-4. In GitHub, open `assets/data/chapters.json`.
-5. Click edit, replace the old contents, and commit.
-6. Preview `chapters.html`.
-7. Commit and push if working locally.
+Edit that JSON instead of hardcoding cards in `chapters.html`.
 
 Do not replace `chapters.html`. Do not upload a new root-level `chapters.json` file. The site reads only `assets/data/chapters.json`.
 
@@ -31,27 +32,11 @@ Leave a link blank if that chapter should not show that button.
 - `contactUrl`: chapter contact form, blank if none
 - `updateUrl`: related blog post, blank if none
 
-## Safety Notes
-
-`dev-tools.html` is only a formatting helper. It is public if someone knows the URL.
-
-Do not store passwords, private student information, donor data, internal notes, or sensitive contact details in JSON files.
-
 ## Update Blog Cards
 
 Blog listing cards are generated from:
 
 `assets/data/articles.json`
-
-To update the blog listing:
-
-1. Open `dev-tools.html`.
-2. Scroll to the Articles section.
-3. Edit title, author, date, read time, summary, image path, alt text, and post URL.
-4. Download `articles.json` or copy the generated JSON.
-5. In GitHub, open `assets/data/articles.json`.
-6. Click edit, replace the old contents, and commit.
-7. Preview `blog.html`.
 
 Older migrated article pages still live in `post/`.
 
@@ -59,18 +44,18 @@ New articles can be written in the `body` field. If `postUrl` is blank, the blog
 
 `article.html?slug=your-article-slug`
 
-## Decap CMS Admin
+## Safety Notes
 
-The repo includes a Decap CMS scaffold at:
+All website files are public once pushed.
 
-`admin/`
+Do not store passwords, private student information, donor data, internal notes, or sensitive contact details in JSON files or HTML pages.
 
-This is intended to become the easier editor-facing backend. It is not fully usable until GitHub authentication/OAuth is configured.
+Do not add GitHub tokens, OAuth credentials, or API secrets to client-side JavaScript.
 
-When auth is ready, editors should be able to visit:
+## Before Pushing
 
-`https://garments4goodness.org/admin/`
-
-and edit blog data through a form-based UI.
-
-Keep `dev-tools.html` for now as a fallback.
+- Preview locally when practical.
+- Check changed links.
+- Confirm mobile layout if the change affects page structure.
+- Keep `.DS_Store` uncommitted.
+- Summarize what changed and what was tested.

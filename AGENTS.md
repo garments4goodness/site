@@ -26,8 +26,7 @@ The site is a static GitHub Pages site. It should remain simple, fast, and backe
 - Shared JS: `assets/js/main.js`
 - Chapter data: `assets/data/chapters.json`
 - Blog/article data: `assets/data/articles.json`
-- Decap CMS scaffold: `admin/`
-- Static maintenance helper: `dev-tools.html`
+- No CMS, admin dashboard, or private backend
 
 ## Current Content Model
 
@@ -47,8 +46,6 @@ Blog listings are generated from:
 
 New data-backed posts can render through `article.html?slug=...` when they have body content and no `postUrl`.
 
-Decap CMS is scaffolded in `admin/`, but GitHub auth/OAuth still needs to be configured before editors can publish through it.
-
 ## Design Style
 
 - Use the existing beige and pink visual system.
@@ -66,7 +63,7 @@ Before pushing link-heavy changes:
 - Do not expose Google Forms `/edit` links.
 - Leave a link blank if it is not ready.
 - Prefer clear labels such as `Follow on Instagram`, `Contact this chapter`, and `Read recent update`.
-- Do not add GitHub tokens or OAuth secrets to `admin/`, `dev-tools.html`, or client JavaScript.
+- Do not add GitHub tokens, OAuth secrets, or API credentials to client JavaScript.
 
 ## Custom Domain
 
@@ -109,7 +106,6 @@ Priorities:
 Check `FUTURE_CHANGES.md` before inventing new work. The highest-priority planned areas are:
 
 - Correct chapter contact links
-- Finish Decap CMS authentication and article editing
 - Add testimonials
 - Configure `garments4goodness.org`
 - SEO pass after custom domain launch

@@ -17,30 +17,28 @@ Next steps:
 - Preview `chapters.html`.
 - Remove or leave blank any contact link that is not ready.
 
-### 2. Finish Decap CMS Blog/Admin Setup
+### 2. Improve Agent-Assisted Blog And Article Updates
 
-Status: partially complete
+Status: planned
 
-The maintenance console supports chapter data and blog listing data. The repo also has a Decap CMS admin scaffold.
+The site uses public JSON files for chapters and blog cards. There is no CMS or backend. Future article work should make the agent-assisted workflow clearer and safer.
 
 Completed:
 
 - Add `assets/data/articles.json`.
 - Render `blog.html` from article data.
-- Add an Articles editor to `dev-tools.html`.
 - Add `article.html` for data-backed article bodies.
-- Add `admin/` Decap CMS scaffold.
 
 Next possible implementation:
 
-- Configure GitHub OAuth/authentication for Decap.
-- Test logging in at `/admin/`.
-- Test editing `assets/data/articles.json` through Decap.
-- Decide whether to add chapters to Decap too or keep them in `dev-tools.html`.
+- Add clearer article templates/examples in documentation.
+- Consider a simple `NEXT_ACTIONS.md` file for agents to read before starting.
+- Keep blog data validation lightweight and local.
+- Preview `blog.html` and `article.html?slug=...` before pushing article changes.
 
 Important:
 
-A true "publish from admin" button requires authentication and should not be built by putting a GitHub token in public JavaScript.
+Do not rebuild a client-side admin dashboard or put GitHub tokens in public JavaScript.
 
 ### 3. Add Testimonials
 
@@ -129,7 +127,6 @@ Only consider this after the content model is stable.
 Potential approaches:
 
 - GitHub collaborators edit files directly in GitHub.
-- Decap CMS or another Git-backed CMS.
 - Cloudflare Access protecting selected tooling.
 - A GitHub App or serverless function that commits changes securely.
 

@@ -2,11 +2,11 @@
 
 Static website for Garments4Goodness, hosted with GitHub Pages.
 
-Production site goal:
+Production site:
 
 `https://garments4goodness.org`
 
-Current GitHub Pages fallback:
+GitHub Pages fallback:
 
 `https://garments4goodness.github.io/site/`
 
@@ -15,10 +15,11 @@ Current GitHub Pages fallback:
 - Static pages such as `index.html`, `chapters.html`, `blog.html`, `donate.html`, and `volunteer.html`
 - Shared styles in `assets/css/styles.css`
 - Shared behavior in `assets/js/main.js`
-- Editable chapter data in `assets/data/chapters.json`
-- Editable blog listing/article data in `assets/data/articles.json`
-- Decap CMS admin scaffold in `admin/`
-- A static maintenance helper at `dev-tools.html`
+- Public chapter data in `assets/data/chapters.json`
+- Public blog listing/article data in `assets/data/articles.json`
+- Older migrated blog posts in `post/`
+
+There is no CMS, login, admin dashboard, or private backend in this repo.
 
 ## Preview Locally
 
@@ -32,78 +33,53 @@ Then open:
 
 `http://127.0.0.1:4174/`
 
-## Updating Chapters
+## Updating Content
 
-Chapter cards are generated from:
+This site is maintained through normal file edits, usually with help from an AI coding agent.
 
-`assets/data/chapters.json`
+Common content files:
 
-Use the helper page:
+- Chapters: `assets/data/chapters.json`
+- Blog cards and data-backed articles: `assets/data/articles.json`
+- Older migrated posts: `post/`
+- Main page text and counters: `index.html`
+- Shared styling: `assets/css/styles.css`
 
-`dev-tools.html`
+Chapter cards are generated from `assets/data/chapters.json`. Blog cards are generated from `assets/data/articles.json`.
 
-That page lets editors update chapter names, descriptions, Instagram links, contact forms, and blog update links without editing HTML directly. It can download or copy a cleaned JSON file.
-
-Important: `dev-tools.html` is public if someone knows the URL. Do not put private notes, passwords, internal student data, donor data, or sensitive information in the JSON.
+When asking an agent to update the site, give the exact content, links, and pages to change. The agent should edit the files, preview locally when practical, then commit and push.
 
 ## Publishing Changes
 
 Basic workflow:
 
-1. Edit files locally or through GitHub.
+1. Edit files locally.
 2. Preview the site locally.
 3. Commit changes.
 4. Push to `main`.
 5. GitHub Pages redeploys automatically.
 
-## Blog Posts And Articles
+## Safety
 
-Blog cards are generated from:
-
-`assets/data/articles.json`
-
-Older migrated posts live as HTML files in `post/`. New data-backed posts can use `article.html?slug=...` when the article has body content and no static `postUrl`.
-
-The repo also includes a Decap CMS scaffold at:
-
-`admin/`
-
-Decap CMS can give editors a friendlier admin UI and commit changes to GitHub, but GitHub login requires an authentication/OAuth setup. Do not put a GitHub token in public client-side JavaScript.
-
-## Private Editing
-
-GitHub Pages is static hosting. Public GitHub Pages sites do not provide private routes, login-only pages, or owner-only admin screens by themselves.
-
-Safe options:
-
-- Keep the website public and the repo editable only by trusted GitHub collaborators.
-- Use `dev-tools.html` as a formatting helper, not as a secure backend.
-- Use GitHub's web editor for approved collaborators.
-- Use Decap CMS after GitHub authentication is configured.
-- Add a custom authenticated admin later with a backend or GitHub App if Decap is not enough.
-
-GitHub Enterprise Cloud has private GitHub Pages access controls for some project sites, but that is not the same as having private sections inside a public site.
+- Do not add AI-generated images.
+- Do not claim Garments4Goodness is directly a 501(c)(3). Use Hack Club Bank/fiscal sponsorship language for donations.
+- Do not put passwords, tokens, private student data, donor data, or internal notes in the public site.
+- Do not put GitHub tokens or API secrets in client-side JavaScript.
+- Keep public pages simple, polished, and consumer-facing.
 
 ## Custom Domain
 
-The intended custom domain is:
+The custom domain is:
 
 `garments4goodness.org`
 
-For GitHub Pages, the repo should eventually include a root-level `CNAME` file containing:
+Cloudflare DNS should point the domain to GitHub Pages, and the repo should include a root `CNAME` file containing:
 
 ```text
 garments4goodness.org
 ```
 
-Cloudflare DNS should point the domain to GitHub Pages. Typical setup:
-
-- Apex domain `garments4goodness.org`: `A` records to GitHub Pages IPs
-- Optional `www.garments4goodness.org`: `CNAME` to `garments4goodness.github.io`
-- GitHub Pages settings: set custom domain to `garments4goodness.org`
-- Enable/enforce HTTPS once GitHub allows it
-
-After the custom domain is live, update canonical URLs, Open Graph URLs, sitemap URLs, and Search Console properties to use `https://garments4goodness.org/`.
+After domain/HTTPS setup is stable, update canonical URLs, Open Graph URLs, sitemap URLs, and Search Console properties to use `https://garments4goodness.org/`.
 
 ## SEO Roadmap
 
@@ -116,7 +92,3 @@ Later improvements:
 - Add alt text improvements
 - Improve blog metadata and social share previews
 - Add testimonials with permission-safe names/quotes
-
-## Notes
-
-This is a static site. Keep changes simple, preview before pushing, and avoid adding heavy third-party scripts unless there is a clear reason.
