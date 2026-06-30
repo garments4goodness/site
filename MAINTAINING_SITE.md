@@ -36,3 +36,41 @@ Leave a link blank if that chapter should not show that button.
 `dev-tools.html` is only a formatting helper. It is public if someone knows the URL.
 
 Do not store passwords, private student information, donor data, internal notes, or sensitive contact details in JSON files.
+
+## Update Blog Cards
+
+Blog listing cards are generated from:
+
+`assets/data/articles.json`
+
+To update the blog listing:
+
+1. Open `dev-tools.html`.
+2. Scroll to the Articles section.
+3. Edit title, author, date, read time, summary, image path, alt text, and post URL.
+4. Download `articles.json` or copy the generated JSON.
+5. In GitHub, open `assets/data/articles.json`.
+6. Click edit, replace the old contents, and commit.
+7. Preview `blog.html`.
+
+Older migrated article pages still live in `post/`.
+
+New articles can be written in the `body` field. If `postUrl` is blank, the blog card links to:
+
+`article.html?slug=your-article-slug`
+
+## Decap CMS Admin
+
+The repo includes a Decap CMS scaffold at:
+
+`admin/`
+
+This is intended to become the easier editor-facing backend. It is not fully usable until GitHub authentication/OAuth is configured.
+
+When auth is ready, editors should be able to visit:
+
+`https://garments4goodness.org/admin/`
+
+and edit blog data through a form-based UI.
+
+Keep `dev-tools.html` for now as a fallback.

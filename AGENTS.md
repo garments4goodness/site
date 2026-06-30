@@ -25,6 +25,8 @@ The site is a static GitHub Pages site. It should remain simple, fast, and backe
 - Shared CSS: `assets/css/styles.css`
 - Shared JS: `assets/js/main.js`
 - Chapter data: `assets/data/chapters.json`
+- Blog/article data: `assets/data/articles.json`
+- Decap CMS scaffold: `admin/`
 - Static maintenance helper: `dev-tools.html`
 
 ## Current Content Model
@@ -35,11 +37,17 @@ Chapter cards are generated from:
 
 If editing chapter links, names, descriptions, or related update links, prefer updating that JSON instead of hardcoding cards in `chapters.html`.
 
-Blog posts currently live as HTML files in:
+Older migrated blog posts currently live as HTML files in:
 
 `post/`
 
-Blog listings are still mostly static in `blog.html`. A future task may move them to `assets/data/articles.json`.
+Blog listings are generated from:
+
+`assets/data/articles.json`
+
+New data-backed posts can render through `article.html?slug=...` when they have body content and no `postUrl`.
+
+Decap CMS is scaffolded in `admin/`, but GitHub auth/OAuth still needs to be configured before editors can publish through it.
 
 ## Design Style
 
@@ -58,6 +66,7 @@ Before pushing link-heavy changes:
 - Do not expose Google Forms `/edit` links.
 - Leave a link blank if it is not ready.
 - Prefer clear labels such as `Follow on Instagram`, `Contact this chapter`, and `Read recent update`.
+- Do not add GitHub tokens or OAuth secrets to `admin/`, `dev-tools.html`, or client JavaScript.
 
 ## Custom Domain
 
@@ -100,7 +109,7 @@ Priorities:
 Check `FUTURE_CHANGES.md` before inventing new work. The highest-priority planned areas are:
 
 - Correct chapter contact links
-- Add article/blog editing to `dev-tools.html`
+- Finish Decap CMS authentication and article editing
 - Add testimonials
 - Configure `garments4goodness.org`
 - SEO pass after custom domain launch

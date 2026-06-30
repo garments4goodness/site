@@ -1,0 +1,40 @@
+{
+  "articles": [
+    {
+      "title": "Lathrop, Clovis, Houston, Wabasha, and Mountain House Chapter events!",
+      "slug": "lathrop-clovis-houston-wabasha-and-mountain-house-chapter-events",
+      "author": "garments4goodness",
+      "date": "Jun 28, 2025",
+      "readTime": "2 min read",
+      "summary": "Recent chapter successes across multiple states, including drives, nonprofit collaborations, and community outreach events.",
+      "imageUrl": "assets/images/blog/chapter-events-hero.png",
+      "imageAlt": "Chapter events collage",
+      "postUrl": "post/lathrop-clovis-houston-wabasha-and-mountain-house-chapter-events.html",
+      "body": ""
+    },
+    {
+      "title": "Kern County, Stafford, and San Jose Chapter donation drives!",
+      "slug": "kern-county-stafford-and-san-jose-chapter-donation-drives",
+      "author": "garments4goodness",
+      "date": "Mar 19, 2025",
+      "readTime": "1 min read",
+      "summary": "An update on Garments4Goodness growth and successful clothing drives in California and Virginia.",
+      "imageUrl": "assets/images/blog/donation-drives-1.png",
+      "imageAlt": "Donation drive image",
+      "postUrl": "post/kern-county-stafford-and-san-jose-chapter-donation-drives.html",
+      "body": ""
+    },
+    {
+      "title": "Milpitas Clothing Donation Drive #1",
+      "slug": "milpitas-clothing-donation-drive-1",
+      "author": "garments4goodness",
+      "date": "Dec 26, 2024",
+      "readTime": "1 min read",
+      "summary": "The first Garments4Goodness drive covered Dixon Landing, Beresford, and Folsom neighborhoods in Milpitas.",
+      "imageUrl": "assets/images/blog/milpitas-drive-1.jpg",
+      "imageAlt": "Milpitas clothing donation drive",
+      "postUrl": "post/_erwe.html",
+      "body": ""
+    }
+  ]
+}

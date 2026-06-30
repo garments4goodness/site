@@ -17,19 +17,26 @@ Next steps:
 - Preview `chapters.html`.
 - Remove or leave blank any contact link that is not ready.
 
-### 2. Add Blog/Article Editing To Dev Tools
+### 2. Finish Decap CMS Blog/Admin Setup
 
-Status: planned
+Status: partially complete
 
-The current maintenance console supports chapter data. The next data-backed section should be blog/article listings.
+The maintenance console supports chapter data and blog listing data. The repo also has a Decap CMS admin scaffold.
 
-Possible implementation:
+Completed:
 
 - Add `assets/data/articles.json`.
 - Render `blog.html` from article data.
 - Add an Articles editor to `dev-tools.html`.
-- Let editors add title, date, summary, image path, post URL, and optional tags.
-- Later, add an article HTML generator for new posts.
+- Add `article.html` for data-backed article bodies.
+- Add `admin/` Decap CMS scaffold.
+
+Next possible implementation:
+
+- Configure GitHub OAuth/authentication for Decap.
+- Test logging in at `/admin/`.
+- Test editing `assets/data/articles.json` through Decap.
+- Decide whether to add chapters to Decap too or keep them in `dev-tools.html`.
 
 Important:
 

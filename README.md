@@ -16,6 +16,8 @@ Current GitHub Pages fallback:
 - Shared styles in `assets/css/styles.css`
 - Shared behavior in `assets/js/main.js`
 - Editable chapter data in `assets/data/chapters.json`
+- Editable blog listing/article data in `assets/data/articles.json`
+- Decap CMS admin scaffold in `admin/`
 - A static maintenance helper at `dev-tools.html`
 
 ## Preview Locally
@@ -56,16 +58,17 @@ Basic workflow:
 
 ## Blog Posts And Articles
 
-Current blog posts live as HTML files in `post/`, and `blog.html` links to them.
+Blog cards are generated from:
 
-Planned improvement:
+`assets/data/articles.json`
 
-- Add `assets/data/articles.json`
-- Render `blog.html` from that data
-- Add an Articles section to `dev-tools.html`
-- Optionally generate article HTML from a simple form
+Older migrated posts live as HTML files in `post/`. New data-backed posts can use `article.html?slug=...` when the article has body content and no static `postUrl`.
 
-A true "publish from the admin page" button would require authentication through a backend, GitHub App, or serverless function. Do not put a GitHub token in public client-side JavaScript.
+The repo also includes a Decap CMS scaffold at:
+
+`admin/`
+
+Decap CMS can give editors a friendlier admin UI and commit changes to GitHub, but GitHub login requires an authentication/OAuth setup. Do not put a GitHub token in public client-side JavaScript.
 
 ## Private Editing
 
@@ -76,7 +79,8 @@ Safe options:
 - Keep the website public and the repo editable only by trusted GitHub collaborators.
 - Use `dev-tools.html` as a formatting helper, not as a secure backend.
 - Use GitHub's web editor for approved collaborators.
-- Add a real authenticated admin later with a backend or a GitHub App.
+- Use Decap CMS after GitHub authentication is configured.
+- Add a custom authenticated admin later with a backend or GitHub App if Decap is not enough.
 
 GitHub Enterprise Cloud has private GitHub Pages access controls for some project sites, but that is not the same as having private sections inside a public site.
 
