@@ -12,10 +12,13 @@ To make changes without hand-editing HTML:
 
 1. Open `dev-tools.html` in the local preview or deployed site.
 2. Edit the chapter fields.
-3. Download or copy the generated JSON.
-4. Replace `assets/data/chapters.json`.
-5. Preview `chapters.html`.
-6. Commit and push.
+3. Download `chapters.json` or copy the generated JSON.
+4. In GitHub, open `assets/data/chapters.json`.
+5. Click edit, replace the old contents, and commit.
+6. Preview `chapters.html`.
+7. Commit and push if working locally.
+
+Do not replace `chapters.html`. Do not upload a new root-level `chapters.json` file. The site reads only `assets/data/chapters.json`.
 
 Leave a link blank if that chapter should not show that button.
 

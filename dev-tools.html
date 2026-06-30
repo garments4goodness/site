@@ -25,7 +25,7 @@
         <div class="hero-copy">
           <p class="eyebrow">Maintenance Console</p>
           <h1>Update chapter data without touching HTML.</h1>
-          <p class="lead">Edit chapter names, locations, descriptions, Instagram links, contact forms, and update links. Then download or copy the generated JSON and replace <code>assets/data/chapters.json</code>.</p>
+          <p class="lead">Edit chapter names, locations, descriptions, Instagram links, contact forms, and update links. Then download or copy the generated JSON and replace the existing file at <code>assets/data/chapters.json</code>. Do not upload it as a new root-level file.</p>
         </div>
       </div>
     </section>
@@ -36,8 +36,9 @@
         <ol>
           <li>Edit the fields below.</li>
           <li>Leave a link blank if that chapter should not show the button.</li>
-          <li>Click <strong>Download JSON</strong> or copy the output.</li>
-          <li>Replace <code>assets/data/chapters.json</code> in GitHub.</li>
+          <li>Click <strong>Download chapters.json</strong> or copy the output.</li>
+          <li>In GitHub, open <code>assets/data/chapters.json</code>, click edit, replace the old contents, and commit.</li>
+          <li>Do not replace <code>chapters.html</code> and do not upload a new file named <code>chapters.json</code> at the repo root.</li>
           <li>Preview <code>chapters.html</code> before publishing.</li>
         </ol>
         <p>This page is public if someone knows the URL. Do not put private notes, passwords, or sensitive data here.</p>
@@ -46,7 +47,7 @@
       <div class="maintenance-main">
         <div class="maintenance-toolbar panel">
           <button class="button" type="button" id="add-chapter">Add Chapter</button>
-          <button class="button secondary" type="button" id="download-json">Download JSON</button>
+          <button class="button secondary" type="button" id="download-json">Download chapters.json</button>
           <button class="button secondary" type="button" id="copy-json">Copy JSON</button>
         </div>
 
