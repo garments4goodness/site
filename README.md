@@ -79,13 +79,12 @@ Cloudflare DNS should point the domain to GitHub Pages, and the repo should incl
 garments4goodness.org
 ```
 
-After domain/HTTPS setup is stable, update canonical URLs, Open Graph URLs, sitemap URLs, and Search Console properties to use `https://garments4goodness.org/`.
+Canonical URLs, Open Graph URLs, sitemap URLs, and Search Console sitemap submissions should use `https://garments4goodness.org/`.
 
 ## SEO Roadmap
 
 Later improvements:
 
-- Switch all canonical metadata from GitHub Pages URLs to `garments4goodness.org`
 - Add richer page titles and descriptions
 - Add structured data for organization, blog posts, and nonprofit work
 - Keep `sitemap.xml` current

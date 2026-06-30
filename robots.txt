@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://garments4goodness.github.io/site/sitemap.xml
+Sitemap: https://garments4goodness.org/sitemap.xml

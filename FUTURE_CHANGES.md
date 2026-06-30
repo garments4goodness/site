@@ -28,11 +28,11 @@ Completed:
 - Add `assets/data/articles.json`.
 - Render `blog.html` from article data.
 - Add `article.html` for data-backed article bodies.
+- Add `NEXT_ACTIONS.md` for agent handoff.
 
 Next possible implementation:
 
 - Add clearer article templates/examples in documentation.
-- Consider a simple `NEXT_ACTIONS.md` file for agents to read before starting.
 - Keep blog data validation lightweight and local.
 - Preview `blog.html` and `article.html?slug=...` before pushing article changes.
 
@@ -42,7 +42,7 @@ Do not rebuild a client-side admin dashboard or put GitHub tokens in public Java
 
 ### 3. Add Testimonials
 
-Status: planned
+Status: started
 
 Testimonials should be permission-safe and public-facing.
 
@@ -57,33 +57,34 @@ Collect:
 
 Possible locations:
 
-- Homepage: 2-3 strongest quotes
+- Homepage: strongest quotes
 - Dedicated testimonials page later
 - Chapter-specific quote on Chapters page if relevant
 
 ### 4. Custom Domain Launch
 
-Status: planned
+Status: mostly complete
 
 Target domain:
 
 `garments4goodness.org`
 
-Tasks:
+Completed:
 
-- Add a root `CNAME` file once DNS/GitHub settings are ready.
-- Configure GitHub Pages custom domain.
-- Configure Cloudflare DNS.
-- Enforce HTTPS.
-- Update canonical URLs, Open Graph URLs, Search Console, and `sitemap.xml`.
+- Add root `CNAME` file.
+- Point SEO metadata, robots.txt, and `sitemap.xml` at the custom domain.
+
+Remaining:
+
+- Confirm HTTPS enforcement in GitHub Pages once the certificate is fully available.
+- Submit `https://garments4goodness.org/sitemap.xml` in Search Console.
 
 ### 5. SEO Pass
 
-Status: planned after custom domain is live
+Status: in progress
 
 Tasks:
 
-- Update all canonical URLs to `https://garments4goodness.org/`.
 - Improve page titles and meta descriptions.
 - Add structured data for organization and blog posts.
 - Improve alt text.
@@ -120,15 +121,13 @@ Tasks:
 
 ## Longer-Term Possibilities
 
-### Real Authenticated Admin
+### Authenticated Admin
 
-Only consider this after the content model is stable.
+Status: not planned
 
-Potential approaches:
+The Decap/admin/dev-tools approach was removed because the organization is using agent-assisted static edits instead.
 
-- GitHub collaborators edit files directly in GitHub.
-- Cloudflare Access protecting selected tooling.
-- A GitHub App or serverless function that commits changes securely.
+Only revisit a real authenticated admin if a maintainer explicitly approves a backend architecture later.
 
 Do not put private GitHub tokens or credentials in client-side JavaScript.
 

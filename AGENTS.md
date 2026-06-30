@@ -71,14 +71,9 @@ Target domain:
 
 `garments4goodness.org`
 
-Do not update all canonical/sitemap URLs until the custom domain is actually configured and verified.
+Canonical and sitemap URLs should use the custom domain unless a maintainer says the domain has been rolled back.
 
-When the custom domain is ready:
-
-- Add a root `CNAME` file.
-- Update `sitemap.xml`.
-- Update canonical and Open Graph URLs.
-- Update Search Console sitemap submission.
+Keep `sitemap.xml`, canonical tags, and Open Graph URLs aligned with the custom domain.
 
 ## SEO
 
@@ -106,6 +101,6 @@ Priorities:
 Check `FUTURE_CHANGES.md` before inventing new work. The highest-priority planned areas are:
 
 - Correct chapter contact links
-- Add testimonials
-- Configure `garments4goodness.org`
-- SEO pass after custom domain launch
+- Add or refine testimonials
+- Submit the custom-domain sitemap in Search Console
+- Continue the SEO pass
