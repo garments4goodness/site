@@ -542,7 +542,9 @@ const setupCounters = () => {
       return;
     }
 
-    const duration = 1100;
+    element.classList.add("is-counting");
+
+    const duration = 1350;
     const start = performance.now();
 
     const tick = (now) => {
