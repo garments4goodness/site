@@ -37,6 +37,17 @@ a {
   color: var(--rose-dark);
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 520ms ease, transform 520ms ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -334,6 +345,52 @@ p {
   gap: 20px;
 }
 
+.chapter-map-section {
+  padding-bottom: 24px;
+}
+
+.chapter-map-shell {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.chapter-map {
+  min-height: 520px;
+  width: 100%;
+  background: var(--rose-soft);
+}
+
+.chapter-map .loading-message {
+  padding: 24px;
+}
+
+.chapter-popup h3 {
+  margin-bottom: 8px;
+  color: var(--rose-dark);
+  font-size: 1.05rem;
+}
+
+.chapter-popup p {
+  margin-bottom: 10px;
+}
+
+.chapter-popup a {
+  font-weight: 700;
+}
+
+.leaflet-popup::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -34px;
+  width: 88px;
+  height: 42px;
+  transform: translateX(-50%);
+}
+
 .loading-message {
   grid-column: 1 / -1;
   margin: 0;
@@ -351,6 +408,14 @@ p {
 .chapter-card {
   display: flex;
   flex-direction: column;
+  scroll-margin-top: 110px;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.chapter-card.is-active {
+  border-color: var(--rose);
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
 }
 
 .chapter-card h3,
@@ -402,6 +467,7 @@ p {
   color: var(--rose-dark);
   line-height: 1;
   margin: 14px 0;
+  font-variant-numeric: tabular-nums;
 }
 
 .counter-note {
@@ -411,6 +477,12 @@ p {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.counter-note [data-count] {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--rose-dark);
 }
 
 .testimonial-band {
@@ -638,5 +710,25 @@ p {
 
   .hero-inner {
     min-height: 360px;
+  }
+
+  .chapter-map {
+    min-height: 420px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .chapter-card {
+    transition: none;
   }
 }

@@ -7,6 +7,7 @@
   <meta name="description" content="Find Garments4Goodness chapters, follow chapter updates, and learn how to start a local chapter in your community.">
   <link rel="canonical" href="https://garments4goodness.org/chapters.html">
   <link rel="icon" href="assets/images/logo.jpg">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -53,11 +54,24 @@
       </div>
     </section>
 
+    <section class="section chapter-map-section">
+      <div class="section-heading">
+        <p class="eyebrow">Chapter Map</p>
+        <h2>Explore our growing chapter network.</h2>
+        <p>Click a pin to jump to that chapter's public card below. This map lists chapters with public Instagram accounts.</p>
+      </div>
+      <div class="chapter-map-shell">
+        <div class="chapter-map" data-chapter-map aria-label="Interactive map of Garments4Goodness chapters">
+          <p class="loading-message">Loading chapter map...</p>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="chapter-directory">
       <div class="section-heading">
         <p class="eyebrow">Chapter Directory</p>
         <h2>Find an active chapter.</h2>
-        <p>Follow chapter Instagrams for local updates, or use the contact buttons below to reach out to a specific chapter.</p>
+        <p>Follow public chapter Instagrams for local updates, or use the contact buttons below when a chapter contact form is available.</p>
       </div>
 
       <div class="chapter-grid" data-chapter-grid>
@@ -76,6 +90,7 @@
   </main>
 
   <footer class="site-footer"><div class="footer-inner"><p>Contact <a href="mailto:garments4goodness@gmail.com">garments4goodness@gmail.com</a> for more info.</p><p>&copy; 2024 by Garments4Goodness. All rights reserved.</p></div></footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
