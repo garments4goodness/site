@@ -345,6 +345,56 @@ p {
   gap: 20px;
 }
 
+.checklist-grid,
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.checklist-card {
+  position: relative;
+  padding-top: 56px;
+}
+
+.checklist-step {
+  position: absolute;
+  top: 20px;
+  left: 24px;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--rose-soft);
+  color: var(--rose-dark);
+  font-weight: 700;
+}
+
+.directory-toolbar {
+  margin-bottom: 28px;
+}
+
+.directory-search {
+  display: grid;
+  gap: 8px;
+  max-width: 420px;
+  color: var(--rose-dark);
+  font-weight: 700;
+}
+
+.directory-search input {
+  width: 100%;
+  min-height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 14px;
+  background: var(--white);
+  color: var(--text);
+  font: inherit;
+}
+
 .chapter-map-section {
   padding-bottom: 24px;
 }
@@ -716,6 +766,8 @@ p {
   .team-grid,
   .card-grid,
   .partner-grid,
+  .checklist-grid,
+  .resource-grid,
   .event-grid,
   .post-card,
   .post-gallery,

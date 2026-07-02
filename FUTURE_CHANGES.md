@@ -6,20 +6,13 @@ This is a working roadmap for Garments4Goodness website improvements. It is mean
 
 ### 1. Fix And Verify Chapter Contact Links
 
-Status: planned
+Status: complete
 
-The Chapters page now renders from `assets/data/chapters.json`, but some contact form links may be outdated or incorrect.
-
-Next steps:
-
-- Confirm the current contact form for every public chapter.
-- Update `assets/data/chapters.json`.
-- Preview `chapters.html`.
-- Remove or leave blank any contact link that is not ready.
+The public chapter directory is now based on confirmed public chapter links and only lists chapters with Instagram accounts.
 
 ### 2. Improve Agent-Assisted Blog And Article Updates
 
-Status: planned
+Status: in progress
 
 The site uses public JSON files for chapters and blog cards. There is no CMS or backend. Future article work should make the agent-assisted workflow clearer and safer.
 
@@ -32,7 +25,7 @@ Completed:
 
 Next possible implementation:
 
-- Add clearer article templates/examples in documentation.
+- Add article templates/examples in documentation.
 - Keep blog data validation lightweight and local.
 - Preview `blog.html` and `article.html?slug=...` before pushing article changes.
 
@@ -63,7 +56,7 @@ Possible locations:
 
 ### 4. Custom Domain Launch
 
-Status: mostly complete
+Status: complete
 
 Target domain:
 
@@ -74,14 +67,9 @@ Completed:
 - Add root `CNAME` file.
 - Point SEO metadata, robots.txt, and `sitemap.xml` at the custom domain.
 
-Remaining:
-
-- Confirm HTTPS enforcement in GitHub Pages once the certificate is fully available.
-- Submit `https://garments4goodness.org/sitemap.xml` in Search Console.
-
 ### 5. SEO Pass
 
-Status: in progress
+Status: secondary
 
 Tasks:
 
@@ -102,10 +90,11 @@ Tasks:
 
 ### Volunteer And Onboarding
 
-- Add a simple onboarding checklist page.
+- Develop a dedicated onboarding experience later, after the content and workflow are defined in more detail.
 - Add chapter starter resources.
 - Add links to Google Classroom or future onboarding materials.
 - Split volunteer paths more clearly by role.
+- Add real Google Form links for each role path so visitors can actually apply.
 
 ### Partnerships
 
@@ -115,9 +104,9 @@ Tasks:
 
 ### Newsletter
 
-- Add a newsletter archive page.
-- Post monthly event-of-the-month updates.
-- Link to Discord/Google Classroom/social announcements.
+- Design the newsletter/archive in more detail before adding it to the public site.
+- Decide how it differs from the blog before building it.
+- Add monthly update structure later if it still feels useful.
 
 ## Longer-Term Possibilities
 

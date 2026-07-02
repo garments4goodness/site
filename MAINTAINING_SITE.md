@@ -44,6 +44,24 @@ New articles can be written in the `body` field. If `postUrl` is blank, the blog
 
 `article.html?slug=your-article-slug`
 
+For a fuller workflow, use:
+
+`docs/article-workflow.md`
+
+and start drafting from:
+
+`docs/article-template.md`
+
+## Outreach And Email Process
+
+This static site should not send emails directly.
+
+For grant, sponsorship, and partnership outreach, use:
+
+`docs/outreach-automation.md`
+
+That doc is for maintainer workflow only, not for public site content.
+
 ## Safety Notes
 
 All website files are public once pushed.

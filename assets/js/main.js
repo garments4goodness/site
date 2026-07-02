@@ -250,6 +250,37 @@ const renderChapterCards = (chapters) => {
   });
 };
 
+const setupChapterFilter = (chapters) => {
+  const searchInput = document.querySelector("[data-chapter-search]");
+  const grid = document.querySelector("[data-chapter-grid]");
+
+  if (!searchInput || !grid) {
+    return;
+  }
+
+  const update = () => {
+    const query = searchInput.value.trim().toLowerCase();
+
+    if (!query) {
+      renderChapterCards(chapters);
+      return;
+    }
+
+    const filtered = chapters.filter((chapter) => {
+      const haystack = [chapter.name, chapter.location, chapter.description].filter(Boolean).join(" ").toLowerCase();
+      return haystack.includes(query);
+    });
+
+    renderChapterCards(filtered);
+
+    if (!filtered.length) {
+      grid.innerHTML = '<p class="notice">No chapters matched that search yet. Try a city, state, or chapter name.</p>';
+    }
+  };
+
+  searchInput.addEventListener("input", update);
+};
+
 const renderChapterDirectory = async () => {
   const grid = document.querySelector("[data-chapter-grid]");
   const mapElement = document.querySelector("[data-chapter-map]");
@@ -269,6 +300,7 @@ const renderChapterDirectory = async () => {
 
     renderChapterCards(chapters);
     renderChapterMap(chapters);
+    setupChapterFilter(chapters);
   } catch (error) {
     const message = '<p class="notice">Chapter information could not be loaded. Please refresh the page or contact garments4goodness@gmail.com.</p>';
 
@@ -427,6 +459,30 @@ const renderArticleDetail = async () => {
     }
 
     detail.append(hero, section);
+
+    if (Array.isArray(article.gallery) && article.gallery.length) {
+      const gallerySection = document.createElement("section");
+      gallerySection.className = "section";
+
+      const gallery = document.createElement("div");
+      gallery.className = "post-gallery";
+
+      article.gallery.forEach((item) => {
+        if (!item.imageUrl) {
+          return;
+        }
+
+        const image = document.createElement("img");
+        image.src = item.imageUrl;
+        image.alt = item.imageAlt || "";
+        gallery.appendChild(image);
+      });
+
+      if (gallery.childElementCount) {
+        gallerySection.appendChild(gallery);
+        detail.appendChild(gallerySection);
+      }
+    }
   } catch (error) {
     detail.innerHTML = '<section class="section"><p class="notice">Article could not be loaded. Please return to the blog and try again.</p><p><a class="button" href="blog.html">Back to Blog</a></p></section>';
   }

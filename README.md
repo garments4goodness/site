@@ -18,6 +18,8 @@ GitHub Pages fallback:
 - Public chapter data in `assets/data/chapters.json`
 - Public blog listing/article data in `assets/data/articles.json`
 - Older migrated blog posts in `post/`
+- Article workflow docs in `docs/article-workflow.md` and `docs/article-template.md`
+- Outreach process notes in `docs/outreach-automation.md`
 
 There is no CMS, login, admin dashboard, or private backend in this repo.
 
@@ -44,6 +46,7 @@ Common content files:
 - Older migrated posts: `post/`
 - Main page text and counters: `index.html`
 - Shared styling: `assets/css/styles.css`
+- Outreach/process notes: `docs/outreach-automation.md`
 
 Chapter cards are generated from `assets/data/chapters.json`. Blog cards are generated from `assets/data/articles.json`.
 
